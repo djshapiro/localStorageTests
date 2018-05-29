@@ -22,6 +22,9 @@
         <span>Result from local storage: </span><span id="displayHeader"></span>
         </h4>
       </div>
+      <script>
+        document.getElementById('displayHeader').innerHTML = window.localStorage.getItem('guyWhoWentToBedWithStockingsOn');
+      </script>
     </div>
     
     <div class="container session">
@@ -40,6 +43,9 @@
         <span>Result from session storage: </span><span id="sessionDisplayHeader"></span>
         </h4>
       </div>
+      <script>
+        document.getElementById('sessionDisplayHeader').innerHTML = window.sessionStorage.getItem('guyWhoWentToBedWithStockingsOn');
+      </script>
     </div>
   </body>
 </html>
